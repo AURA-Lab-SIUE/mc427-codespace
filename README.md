@@ -8,6 +8,8 @@ You do not need to know R, VS Code, or GitHub to use it. Each step below says wh
 
 A free GitHub account, signed in. The course guide **GitHub Account and Copilot Student** walks you through making one.
 
+If you do not see a green **Use this template** button near the top of this page, you are not signed in yet: select **Sign in** at the top of the page.
+
 ## What it costs
 
 Nothing. GitHub gives every personal account a free monthly allowance of codespace time, about 60 hours a month of an open codespace, and this course uses a small part of it. Your codespace stops on its own after 30 minutes without use, which saves your allowance. If you ever use it all up, GitHub pauses your codespace until the next month. GitHub never charges you unless you add a payment method, so do not add one.
@@ -16,14 +18,17 @@ Nothing. GitHub gives every personal account a free monthly allowance of codespa
 
 1. Near the top of this page, select the green **Use this template** button.
 2. In the menu that opens, select **Open in a codespace**.
-3. Wait while GitHub builds your codespace. The first start takes a few minutes. When VS Code opens, this page opens again inside it, and the bottom of the window may say **Activating Extensions...** for a minute. Wait until that message goes away.
+3. Wait while GitHub builds your codespace. First, a page that says **Setting up your codespace** appears, and it can show nothing else for several minutes. That is normal, so do not reload the page or select **Use this template** again: selecting it again makes a second codespace. Next, VS Code opens, and while the bottom-left corner of its window says **Opening Remote...**, it is still getting ready. If the page still says **Setting up your codespace** after 15 minutes, take a screenshot and email your instructor.
+4. A message asks **"Do you trust the authors of the files in this folder?"** These are the course's own files: select **Trust Folder & Continue**.
 
-**It worked if:** VS Code is open in your browser tab, the file list on the left shows `README.md`, and this page is open in the middle of the window.
+**It worked if:** VS Code is open in your browser tab, and the file list on the left is headed `mc427-codespace` and shows `README.md`. This page also opens in the middle of the window as plain text, with symbols such as `#` and `**`; you can close it.
 
 ## Check that R works
 
 1. Press **Ctrl+Shift+P**, type `R: Create R Terminal`, and press **Enter**. A panel opens at the bottom of the window and ends with a `>`. That panel is R.
-2. Click next to the `>`, type this line exactly, and press **Enter**:
+2. A message with a red symbol appears in the bottom-right corner and asks whether to install the R package **sess**. It is not an error: select **Yes**. A second panel runs for a few seconds and ends with `* DONE (sess)`. The message comes only this first time. A yellow message about **R Debugger** may also appear; you can close it.
+3. Go back to R: in the list at the right side of the Terminal panel, select **R Interactive**. The panel ending with a `>` is back.
+4. Click next to the `>`, type this line exactly, and press **Enter**:
 
    ```
    library(effectsize)
@@ -31,16 +36,16 @@ Nothing. GitHub gives every personal account a free monthly allowance of codespa
 
 **It worked if:** the `>` comes back with no message. If you see a line starting with `Error`, take a screenshot and email your instructor.
 
-Then go back to the course guide **Setup on a Chromebook** and continue with its next step.
+Then go back to the course guide **Setup on a Chromebook** and continue with step **B3**.
 
 ## Keep your codespace until you need it
 
 **GitHub deletes a codespace that has not been opened for 30 days, along with everything in it.** To stop that:
 
 1. Go to [https://github.com/codespaces](https://github.com/codespaces).
-2. Next to your codespace, select **...**, then **Keep codespace**.
+2. Next to your codespace, select **...**, then **Auto-delete codespace**, so that the check mark next to it goes away. A bookmark icon appears next to your codespace's name.
 
-To open your codespace again later, go to that same page and select its name. Do not use **Use this template** again: that makes a second, empty codespace, and two codespaces use your allowance twice as fast.
+To open your codespace again later, go to that same page and select its name. Do not select **Use this template** again: that makes a second codespace, without your files in it.
 
 A codespace is a workspace, not storage. Keep copies of your work on your own computer: in the file list, right-click a file and select **Download...**.
 
