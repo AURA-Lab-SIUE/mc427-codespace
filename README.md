@@ -50,7 +50,7 @@ Two kinds of course file live in this page's file list, so you never have to att
 
 The two monthly data files are already here. Any other data file a module hands you comes from Blackboard: download it to your computer, then upload it into the codespace as **Setup on a Chromebook**, step B4, shows.
 
-**If a file is ever missing from your folder,** you can take it from this page: open the file, select the download icon (**Download raw file**) at the top right of its contents, and save it into your `MC427` folder.
+**If a file is ever missing from your folder,** you can take it from this page: open the file and select the download icon (**Download raw file**) at the top right of its contents. Your browser saves it in your **Downloads** folder without asking where; open File Explorer (Finder on a Mac), go to **Downloads**, and drag the file into your `MC427` folder (a starter goes into its `starters` folder).
 
 **Saving your work to GitHub.** When you have changed or added files, the **Source Control** icon in VS Code's left bar shows a number. Select it, type a few words in the **Message** box, select **Commit** (one saved snapshot of your files), then **Sync Changes**. Your copy on GitHub then holds your work.
 
