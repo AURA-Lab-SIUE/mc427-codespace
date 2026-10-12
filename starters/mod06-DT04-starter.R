@@ -5,6 +5,7 @@
 # started, then run one line at a time with Ctrl+Enter (Command+Return on a Mac).
 # The comment above each line says what it does and what should print.
 # You need nms-steam-monthly-players-2016-2026.csv in the same folder.
+# (In a codespace: upload the CSV to the top of the file list, not into the starters folder.)
 
 # Load the course packages. Prints nine package names and two Conflicts lines; that is normal.
 library(tidyverse)

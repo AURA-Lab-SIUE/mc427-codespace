@@ -4,6 +4,7 @@
 # from the top. A line that starts with # is a comment: R skips it.
 # Before you start: nms-x-monthly-2016-2021.csv is in your MC427 folder, and
 # VS Code has that folder open. Check with getwd() and list.files() in the R terminal.
+# (In a codespace: upload it to the top of the file list, not into the starters folder.)
 
 # ---- 1. Load the tidyverse ----
 library(tidyverse)

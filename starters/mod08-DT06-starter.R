@@ -5,6 +5,7 @@
 # started, then run one line at a time with Ctrl+Enter (Command+Return on a Mac).
 # It re-runs the Module 6 kept rate as the worked case, then leaves room for the lines behind
 # each number on your own slides. You need nms-steam-monthly-players-2016-2026.csv in the folder.
+# (In a codespace: upload the CSV to the top of the file list, not into the starters folder.)
 
 # Load the course packages. Every script starts here.
 library(tidyverse)

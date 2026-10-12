@@ -7,7 +7,8 @@ format: html
 ---
 
 <!-- How to use this file: it is your Mini-Analysis submission, with the headings in place.
-     Work in VS Code with your MC427 folder open and the R terminal started.
+     Work in VS Code with your MC427 folder open and the R terminal started. (In a codespace: upload
+     the CSV to the top of the file list, not into the starters folder.)
      Run a code chunk by putting the cursor inside it and pressing Ctrl+Enter line by line
      (Command+Return on a Mac). Every place marked YOUR TURN is where your own work goes.
      When you are done, copy the text, your code and R's output into your submission document:
