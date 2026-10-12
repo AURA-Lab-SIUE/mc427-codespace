@@ -12,6 +12,8 @@
         "r.rterm.linux": "/usr/local/bin/R",
         "r.bracketedPaste": false,
         "r.lsp.promptToInstall": false,
+        "r.lsp.diagnostics": false,
+        "scm.countBadge": "off",
         "files.autoSave": "afterDelay",
         "editor.wordWrap": "on"
       }

@@ -4,6 +4,7 @@
 # from the top. A line that starts with # is a comment: R skips it.
 # Before you start: nms-steam-monthly-players-2016-2026.csv is in your MC427
 # folder, and VS Code has that folder open.
+# (In a codespace: upload it to the top of the file list, not into the starters folder.)
 
 # ---- 1. Load the tidyverse (once, at the top of every script) ----
 # Prints a list of package names with check marks, then two "masks" lines. Both are normal.

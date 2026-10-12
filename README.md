@@ -19,9 +19,9 @@ Nothing. GitHub gives every personal account a free monthly allowance of codespa
 1. Near the top of this page, select the green **Use this template** button.
 2. In the menu that opens, select **Open in a codespace**.
 3. Wait while GitHub builds your codespace. First, a page that says **Setting up your codespace** appears, and it can show nothing else for several minutes. That is normal, so do not reload the page or select **Use this template** again: selecting it again makes a second codespace. Next, VS Code opens, and while the bottom-left corner of its window says **Opening Remote...**, it is still getting ready. If the page still says **Setting up your codespace** after 15 minutes, take a screenshot and email your instructor.
-4. A message asks **"Do you trust the authors of the files in this folder?"** These are the course's own files: select **Trust Folder & Continue**.
+4. A message asks whether you trust the authors of the files in this folder. It may appear a few seconds after VS Code opens, and until then the window says **Restricted Mode**. These are the course's own files: select **Trust Folder & Continue**.
 
-**It worked if:** VS Code is open in your browser tab, and the file list on the left is headed `mc427-codespace` and shows `README.md`. This page also opens in the middle of the window as plain text, with symbols such as `#` and `**`; you can close it.
+**It worked if:** VS Code is open in your browser tab, and the file list on the left is headed `mc427-codespace` and shows `README.md`, `mc427-setup-check.R` and a `starters` folder. This page also opens in the middle of the window as plain text, with symbols such as `#` and `**`; you can close it. A panel ending in `$` may already be open at the bottom; that is not R, and the next section opens R.
 
 ## Check that R works
 
@@ -34,7 +34,7 @@ Nothing. GitHub gives every personal account a free monthly allowance of codespa
    library(tidyverse)
    ```
 
-**It worked if:** a list of package names with check marks appears, ending in two lines that start with a red symbol and say `masks`; that is normal, and the `>` comes back. If you see a line starting with `Error`, take a screenshot and email your instructor.
+**It worked if:** a list of package names with check marks appears, then two lines that start with a red symbol and say `masks`, then a line about the conflicted package; all of that is normal, and the `>` comes back. If you see a line starting with `Error`, take a screenshot and email your instructor.
 
 Then go back to the course guide **Setup on a Chromebook** and continue with step **B3**.
 

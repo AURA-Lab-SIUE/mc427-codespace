@@ -1,0 +1,9 @@
+# Files a student makes while working. They stay in the codespace but never show as changes to commit.
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf
+# Data files uploaded from Blackboard, and charts saved with ggsave(). Course files tracked here are unaffected.
+*.csv
+*.xlsx
+*.png
