@@ -8,7 +8,7 @@ You do not need to know R, VS Code, or GitHub to use it. Each step below says wh
 
 A free GitHub account, signed in. The course guide **GitHub Account and Copilot Student** walks you through making one.
 
-If you do not see a green **Use this template** button near the top of this page, you are not signed in yet: select **Sign in** at the top of the page.
+On the course's template page, if you do not see a green **Use this template** button near the top right, you are not signed in yet: select **Sign in** at the top of the page.
 
 ## What it costs
 
@@ -61,7 +61,7 @@ The two monthly data files are already here. Any other data file a module hands 
 1. Go to [https://github.com/codespaces](https://github.com/codespaces).
 2. Next to your codespace, select **...**, then **Auto-delete codespace**, so that the check mark next to it goes away. A bookmark icon appears next to your codespace's name.
 
-To open your codespace again later, go to that same page and select its name. Do not select **Use this template** again: that makes a second codespace, without your files in it.
+To open your codespace again later, go to that same page and select its name. Do not create another one from the **Code** button: that makes a second codespace, without your files in it.
 
 A codespace is a workspace, not storage. Keep copies of your work on your own computer: in the file list, right-click a file and select **Download...**.
 
