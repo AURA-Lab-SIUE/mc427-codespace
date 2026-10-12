@@ -10,8 +10,9 @@ format: html
      Work in VS Code with your MC427 folder open and the R terminal started.
      Run a code chunk by putting the cursor inside it and pressing Ctrl+Enter line by line
      (Command+Return on a Mac). Every place marked YOUR TURN is where your own work goes.
-     When you are done, render the file with Quarto (Ctrl+Shift+K) if the Quarto extension is
-     installed, or copy its text, code and output into your submission document. -->
+     When you are done, copy the text, your code and R's output into your submission document:
+     in the R terminal, drag across the lines to select them, then press Ctrl+C (Command+C on a
+     Mac). If you have the Quarto extension, you may render the file instead. -->
 
 # Setup
 
@@ -42,8 +43,9 @@ YOUR TURN: one sentence naming the test and why it fits this question. Write it 
 #| label: analysis-1
 # YOUR TURN: paste Copilot's code here, read it, then run it line by line.
 # Ask for tidyverse code (dplyr, the %>% pipe, broom::tidy) in your prompt.
-# Expected output shape: a one-row tibble with statistic, p.value and parameter columns,
-# and a Cohen's d line from effectsize.
+# Expected: a one-row tibble whose first columns are estimate, estimate1 (the mean of the `no`
+# group), estimate2 (`yes`), statistic (the t value), p.value and parameter (Welch's df, not n),
+# then a Cohen's d line from effectsize.
 # Run the test twice, on like_count and on a log1p(like_count) column (see the instructions),
 # and keep both outputs here.
 ```
