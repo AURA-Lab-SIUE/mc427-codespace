@@ -14,14 +14,16 @@ If you do not see a green **Use this template** button near the top of this page
 
 Nothing. GitHub gives every personal account a free monthly allowance of codespace time, about 60 hours a month of an open codespace, and this course uses a small part of it. Your codespace stops on its own after 30 minutes without use, which saves your allowance. If you ever use it all up, GitHub pauses your codespace until the next month. GitHub never charges you unless you add a payment method, so do not add one.
 
-## Start your codespace (do this once)
+## Your own copy
 
-1. Near the top of this page, select the green **Use this template** button.
-2. In the menu that opens, select **Open in a codespace**.
-3. Wait while GitHub builds your codespace. First, a page that says **Setting up your codespace** appears, and it can show nothing else for several minutes. That is normal, so do not reload the page or select **Use this template** again: selecting it again makes a second codespace. Next, VS Code opens, and while the bottom-left corner of its window says **Opening Remote...**, it is still getting ready. If the page still says **Setting up your codespace** after 15 minutes, take a screenshot and email your instructor.
-4. A message asks whether you trust the authors of the files in this folder. It may appear a few seconds after VS Code opens, and until then the window says **Restricted Mode**. These are the course's own files: select **Trust Folder & Continue**.
+If the name at the top of this page is **AURA-Lab-SIUE/mc427-codespace**, you are looking at the course's template, and your first step is to make your own copy of it: the course guide **GitHub Account and Copilot Student**, Part 6, walks through it (green **Use this template** button at the top right, **Create a new repository**, name it **MC427**, choose **Private**, **Create repository**). If the name at the top is your username followed by **MC427**, this is your copy and that step is done.
 
-**It worked if:** VS Code is open in your browser tab, and the file list on the left is headed `mc427-codespace` and shows `README.md`, `mc427-setup-check.R` and a `starters` folder. This page also opens in the middle of the window as plain text, with symbols such as `#` and `**`; you can close it. A panel ending in `$` may already be open at the bottom; that is not R, and the next section opens R.
+## Open your copy (do this once)
+
+Part 7 of the same guide covers both routes with every click. In short, on your copy's page:
+
+- **A codespace (Chromebook, or any computer that cannot install software):** select the green **Code** button, then the **Codespaces** tab, then **Create codespace on main**. A new browser tab opens, VS Code says **Opening Remote...** for about two minutes, and then a dialog asks whether you trust the authors of the files in this folder: select **Trust Folder & Continue**. If you see a blue **Restricted Mode** bar instead, select **Manage** in it, then **Trust**. It worked if the file list on the left is headed **MC427 [Codespaces]**.
+- **VS Code on your own computer (Windows or Mac):** in VS Code, select **Clone Git Repository...** on the Welcome page, then **Clone from GitHub**, sign in when asked, pick your **MC427**, choose **Documents** as the place for it, and select **Open** when VS Code offers. It worked if the file list on the left is headed **MC427**.
 
 ## Check that R works
 
@@ -36,7 +38,7 @@ Nothing. GitHub gives every personal account a free monthly allowance of codespa
 
 **It worked if:** a list of package names with check marks appears, then two lines that start with a red symbol and say `masks`, then a line about the conflicted package; all of that is normal, and the `>` comes back. If you see a line starting with `Error`, take a screenshot and email your instructor.
 
-Then go back to the course guide **Setup on a Chromebook** and continue with step **B3**.
+Then go back to the course guide **Setup on a Chromebook** and continue with step **B2** (if you are in a codespace) or **Check Your Setup** (on your own computer).
 
 ## The course's R files are already here
 
@@ -46,9 +48,11 @@ Two kinds of course file live in this page's file list, so you never have to att
 - `nms-steam-monthly-players-2016-2026.csv` and `nms-x-monthly-2016-2021.csv`, the two monthly-count data files that the Module 2, 3, 6, 7 and 8 Data Tasks load. The first is the public monthly average and peak Steam player counts for No Man's Sky, copied from SteamCharts; the second is monthly counts and percentages from the course's archive of public #NoMansSky posts on X, with no post text and no account names. The other data files each module hands you still come from Blackboard.
 - `starters/`, one starter script per Data Task and analysis (`mod02-week2-starter.R`, `mod03-DT02-starter.R`, and so on). When a module tells you to open its starter, select it under `starters` in the file list. Every line is already written, with a comment above it.
 
-Data files (the `.csv` files each module hands you) come from Blackboard: download them to your computer, then upload them into the codespace as **Setup on a Chromebook**, step B4, shows.
+The two monthly data files are already here. Any other data file a module hands you comes from Blackboard: download it to your computer, then upload it into the codespace as **Setup on a Chromebook**, step B4, shows.
 
-**If you use R on your own computer instead of a codespace,** you can take any of these files from this page: open the file, select the download icon (**Download raw file**) at the top right of its contents, and save it into your `MC427` folder.
+**If a file is ever missing from your folder,** you can take it from this page: open the file, select the download icon (**Download raw file**) at the top right of its contents, and save it into your `MC427` folder.
+
+**Saving your work to GitHub.** When you have changed or added files, the **Source Control** icon in VS Code's left bar shows a number. Select it, type a few words in the **Message** box, select **Commit** (one saved snapshot of your files), then **Sync Changes**. Your copy on GitHub then holds your work.
 
 ## Keep your codespace until you need it
 
