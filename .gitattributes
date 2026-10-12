@@ -1,1 +1,3 @@
 * text=auto eol=lf
+# Data files are byte-exact copies of the course files: never normalize their line endings.
+*.csv -text

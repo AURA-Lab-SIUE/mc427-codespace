@@ -43,6 +43,7 @@ Then go back to the course guide **Setup on a Chromebook** and continue with ste
 Two kinds of course file live in this page's file list, so you never have to attach or upload them:
 
 - `mc427-setup-check.R`, the setup test. In the R terminal, type `source("mc427-setup-check.R")` and press **Enter**; the course guide **Check Your Setup** says what the result means.
+- `nms-steam-monthly-players-2016-2026.csv` and `nms-x-monthly-2016-2021.csv`, the two monthly-count data files that the Module 2, 3, 6, 7 and 8 Data Tasks load. The first is the public monthly average and peak Steam player counts for No Man's Sky, copied from SteamCharts; the second is monthly counts and percentages from the course's archive of public #NoMansSky posts on X, with no post text and no account names. The other data files each module hands you still come from Blackboard.
 - `starters/`, one starter script per Data Task and analysis (`mod02-week2-starter.R`, `mod03-DT02-starter.R`, and so on). When a module tells you to open its starter, select it under `starters` in the file list. Every line is already written, with a comment above it.
 
 Data files (the `.csv` files each module hands you) come from Blackboard: download them to your computer, then upload them into the codespace as **Setup on a Chromebook**, step B4, shows.

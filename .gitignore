@@ -7,3 +7,6 @@ Rplots.pdf
 *.csv
 *.xlsx
 *.png
+# The two course data files that ship with the template are tracked; the rules below do not apply to them.
+!nms-steam-monthly-players-2016-2026.csv
+!nms-x-monthly-2016-2021.csv
