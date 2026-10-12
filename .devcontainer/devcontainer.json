@@ -1,5 +1,5 @@
 {
-  "name": "MC 427: R and effectsize",
+  "name": "MC 427: R, tidyverse and effectsize",
   "build": { "dockerfile": "Dockerfile" },
   "customizations": {
     "vscode": {
