@@ -1,6 +1,6 @@
 # MC 427 Codespace
 
-This page is for MC 427 Social Media Analytics. It starts a **GitHub Codespace**: VS Code running in your web browser, on GitHub's computers, with R and the course's R package, **effectsize**, already installed. You install nothing on your own computer, so it works on a Chromebook, a school-managed laptop, or any computer with a current web browser.
+This page is for MC 427 Social Media Analytics. It starts a **GitHub Codespace**: VS Code running in your web browser, on GitHub's computers, with R and the course's two R packages, **tidyverse** and **effectsize**, already installed. You install nothing on your own computer, so it works on a Chromebook, a school-managed laptop, or any computer with a current web browser.
 
 You do not need to know R, VS Code, or GitHub to use it. Each step below says what to click and what you should see when it worked.
 
@@ -31,10 +31,10 @@ Nothing. GitHub gives every personal account a free monthly allowance of codespa
 4. Click next to the `>`, type this line exactly, and press **Enter**:
 
    ```
-   library(effectsize)
+   library(tidyverse)
    ```
 
-**It worked if:** the `>` comes back with no message. If you see a line starting with `Error`, take a screenshot and email your instructor.
+**It worked if:** a list of package names with check marks appears, ending in two lines that start with a red symbol and say `masks`; that is normal, and the `>` comes back. If you see a line starting with `Error`, take a screenshot and email your instructor.
 
 Then go back to the course guide **Setup on a Chromebook** and continue with step **B3**.
 
@@ -52,5 +52,5 @@ A codespace is a workspace, not storage. Keep copies of your work on your own co
 ## If something goes wrong
 
 - **GitHub says you have used your monthly allowance.** Go to [https://github.com/codespaces](https://github.com/codespaces), delete any codespace you are not using from the **...** menu next to it, and email your instructor. Do not add a payment method.
-- **Your codespace is gone.** It was deleted after 30 days without use. Start a new one with the steps above. R and effectsize come with it again.
+- **Your codespace is gone.** It was deleted after 30 days without use. Start a new one with the steps above. R, tidyverse and effectsize come with it again.
 - **Anything else.** Stop after 15 minutes on one step. Take a screenshot, write down the step, and email your instructor.
