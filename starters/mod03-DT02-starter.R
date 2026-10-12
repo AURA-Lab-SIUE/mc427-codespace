@@ -39,7 +39,10 @@ round(100 * (jul / jun - 1))
 # YOUR TURN: select the line that starts "jun <- posts" and ask Copilot Chat:
 # "Explain this R line one piece at a time for a beginner."
 # YOUR TURN: ask Copilot for a line that adds up posts_mentioning_refund for the months
-# 2016-08 and 2016-09. Paste its line below this comment and run it.
+# 2016-08 and 2016-09. Copilot Chat may open in Agent mode, which can change your files by
+# itself; ask for code only. Type: Write one tidyverse line that adds up posts_mentioning_refund
+# for the months 2016-08 and 2016-09 in posts. Do not run anything; reply with only the code block.
+# Paste its line below this comment and run it.
 # Expect: 803. If you get anything else, the line is wrong.
 
 
