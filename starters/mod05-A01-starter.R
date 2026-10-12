@@ -5,8 +5,9 @@
 # MC427 folder open and the R terminal started, then run one line at a time with Ctrl+Enter
 # (Command+Return on a Mac). Every place marked YOUR TURN is where your own work goes: code goes
 # on the lines below the marker, and sentences go in the comments below the marker, with a #
-# at the start of each line. When you are done, copy the code, the output and your sentences
-# from this file into your submission document, section by section, in the order below.
+# at the start of each line. When you are done, copy the text, your code and R's output into
+# your submission document, section by section, in the order below: in the R terminal, drag
+# across the lines to select them, then press Ctrl+C (Command+C on a Mac).
 
 # ---- Setup -----------------------------------------------------------------------------------
 
@@ -30,8 +31,9 @@ df %>% count(share_button)
 
 # Copilot's code and output. YOUR TURN: paste Copilot's code below, read it, then run it line by
 # line. Ask for tidyverse code (dplyr, the %>% pipe, broom::tidy) in your prompt.
-# Expected output shape: a one-row tibble with statistic, p.value and parameter columns, and a
-# Cohen's d line from effectsize. Run the test twice, on like_count and on a log1p(like_count)
+# Expected: a one-row tibble whose first columns are estimate, estimate1 (the mean of the no
+# group), estimate2 (yes), statistic (the t value), p.value and parameter (Welch's df, not n),
+# then a Cohen's d line from effectsize. Run the test twice, on like_count and on a log1p(like_count)
 # column (see the instructions), and keep both outputs.
 
 
