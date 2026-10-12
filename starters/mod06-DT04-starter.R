@@ -4,8 +4,8 @@
 # How to use this file: open it in VS Code with your MC427 folder open and the R terminal
 # started, then run one line at a time with Ctrl+Enter (Command+Return on a Mac).
 # The comment above each line says what it does and what should print.
-# You need nms-steam-monthly-players-2016-2026.csv in the same folder.
-# (In a codespace: upload the CSV to the top of the file list, not into the starters folder.)
+# nms-steam-monthly-players-2016-2026.csv is already at the top level of your course folder
+# (it comes with the course template; if it is missing, download it from the Module 3 Client Scenario item).
 
 # Load the course packages. Prints nine package names and two Conflicts lines; that is normal.
 library(tidyverse)

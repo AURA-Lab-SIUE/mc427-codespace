@@ -4,8 +4,8 @@
 # How to use this file: open it in VS Code with your MC427 folder open and the R terminal
 # started, then run one line at a time with Ctrl+Enter (Command+Return on a Mac).
 # It re-runs the Module 6 kept rate as the worked case, then leaves room for the lines behind
-# each number on your own slides. You need nms-steam-monthly-players-2016-2026.csv in the folder.
-# (In a codespace: upload the CSV to the top of the file list, not into the starters folder.)
+# each number on your own slides. nms-steam-monthly-players-2016-2026.csv is already at the top level of your course folder
+# (it comes with the course template; if it is missing, download it from the Module 3 Client Scenario item).
 
 # Load the course packages. Every script starts here.
 library(tidyverse)
