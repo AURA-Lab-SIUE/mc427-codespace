@@ -38,6 +38,17 @@ Nothing. GitHub gives every personal account a free monthly allowance of codespa
 
 Then go back to the course guide **Setup on a Chromebook** and continue with step **B3**.
 
+## The course's R files are already here
+
+Two kinds of course file live in this page's file list, so you never have to attach or upload them:
+
+- `mc427-setup-check.R`, the setup test. In the R terminal, type `source("mc427-setup-check.R")` and press **Enter**; the course guide **Check Your Setup** says what the result means.
+- `starters/`, one starter script per Data Task and analysis (`mod02-week2-starter.R`, `mod03-DT02-starter.R`, and so on). When a module tells you to open its starter, select it under `starters` in the file list. Every line is already written, with a comment above it.
+
+Data files (the `.csv` files each module hands you) come from Blackboard: download them to your computer, then upload them into the codespace as **Setup on a Chromebook**, step B4, shows.
+
+**If you use R on your own computer instead of a codespace,** you can take any of these files from this page: open the file, select the download icon (**Download raw file**) at the top right of its contents, and save it into your `MC427` folder.
+
 ## Keep your codespace until you need it
 
 **GitHub deletes a codespace that has not been opened for 30 days, along with everything in it.** To stop that:
