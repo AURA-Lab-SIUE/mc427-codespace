@@ -5,7 +5,8 @@
 # MC427 folder open and the R terminal started, then run one line at a time with Ctrl+Enter
 # (Command+Return on a Mac). Every place marked YOUR TURN is where your own work goes: code goes
 # on the lines below the marker, and sentences go in the comments below the marker, with a #
-# at the start of each line. When you are done, copy the text, your code and R's output into
+# at the start of each line. (In a codespace: upload the CSV to the top of the file list, not
+# into the starters folder.) When you are done, copy the text, your code and R's output into
 # your submission document, section by section, in the order below: in the R terminal, drag
 # across the lines to select them, then press Ctrl+C (Command+C on a Mac).
 
