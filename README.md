@@ -70,3 +70,9 @@ A codespace is a workspace, not storage. Keep copies of your work on your own co
 - **GitHub says you have used your monthly allowance.** Go to [https://github.com/codespaces](https://github.com/codespaces), delete any codespace you are not using from the **...** menu next to it, and email your instructor. Do not add a payment method.
 - **Your codespace is gone.** It was deleted after 30 days without use. Start a new one with the steps above. R, tidyverse and effectsize come with it again.
 - **Anything else.** Stop after 15 minutes on one step. Take a screenshot, write down the step, and email your instructor.
+
+## About this template (for instructors)
+
+This template is maintained by the AURA Lab at Southern Illinois University Edwardsville for MC 427 Social Media Analytics. It is a sibling of the lab's [From Vibes to Variables (V2V)](https://aura-lab.siue.edu/v2v/) methods package (the textbook, the [course hub](https://aura-lab.siue.edu/v2v-hub/), the [v2v R package](https://github.com/AURA-Lab-SIUE/v2v-r), the [course workspace](https://github.com/AURA-Lab-SIUE/v2v-workspace), and the [R Companion](https://github.com/AURA-Lab-SIUE/r-companion) VS Code extension), which serves MC 451 and MC 501. MC 427 uses the same VS Code and R toolchain through this Codespace, without the v2v package.
+
+To adapt it for another course: the R version and preinstalled packages are in `.devcontainer/Dockerfile`, the pinned VS Code extensions and settings are in `.devcontainer/devcontainer.json`, the graded setup check is `mc427-setup-check.R` (its `SETUP OK` line is matched character for character by the course guide, so change both together), the course data files sit at the repository root, and the per-module starter scripts are in `starters/`.
