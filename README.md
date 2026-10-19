@@ -1,6 +1,6 @@
 # MC 427 Codespace
 
-This page is for MC 427 Social Media Analytics. It starts a **GitHub Codespace**: VS Code running in your web browser, on GitHub's computers, with R and the course's two R packages, **tidyverse** and **effectsize**, already installed. You install nothing on your own computer, so it works on a Chromebook, a school-managed laptop, or any computer with a current web browser.
+This page is for MC 427 Social Media Analytics. It starts a **GitHub Codespace**: VS Code running in your web browser, on GitHub's computers, with R, the course's two R packages, **tidyverse** and **effectsize**, and the AURA Lab R Companion already installed. You install nothing on your own computer, so it works on a Chromebook, a school-managed laptop, or any computer with a current web browser.
 
 You do not need to know R, VS Code, or GitHub to use it. Each step below says what to click and what you should see when it worked.
 
@@ -38,6 +38,8 @@ Part 7 of the same guide covers both routes with every click. In short, on your 
 
 **It worked if:** a list of package names with check marks appears, then two lines that start with a red symbol and say `masks`, then a line about the conflicted package; all of that is normal, and the `>` comes back. If you see a line starting with `Error`, take a screenshot and email your instructor.
 
+Or run **Check my setup** (AURA Lab R Companion) from the Command Palette (**Ctrl+Shift+P**): it finds R, checks both course packages, and ends with `SETUP OK: R and the course packages are working.`
+
 Then go back to the course guide **Setup on a Chromebook** and continue with step **B2** (if you are in a codespace) or **Check Your Setup** (on your own computer).
 
 ## The course's R files are already here
@@ -45,8 +47,9 @@ Then go back to the course guide **Setup on a Chromebook** and continue with ste
 Two kinds of course file live in this page's file list, so you never have to attach or upload them:
 
 - `mc427-setup-check.R`, the setup test. In the R terminal, type `source("mc427-setup-check.R")` and press **Enter**; the course guide **Check Your Setup** says what the result means.
-- `nms-steam-monthly-players-2016-2026.csv` and `nms-x-monthly-2016-2021.csv`, the two monthly-count data files that the Module 2, 3, 6, 7 and 8 Data Tasks load. The first is the public monthly average and peak Steam player counts for No Man's Sky, copied from SteamCharts; the second is monthly counts and percentages from the course's archive of public #NoMansSky posts on X, with no post text and no account names. The other data files each module hands you still come from Blackboard.
+- `nms-steam-monthly-players-2016-2026.csv` and `nms-x-monthly-2016-2021.csv`, the two monthly-count data files that the Module 2, 3, 6, 7, and 8 Data Tasks load. The first is the public monthly average and peak Steam player counts for No Man's Sky, copied from SteamCharts; the second is monthly counts and percentages from the course's archive of public #NoMansSky posts on X, with no post text and no account names. The other data files each module hands you still come from Blackboard.
 - `starters/`, one starter script per Data Task and analysis (`mod02-week2-starter.R`, `mod03-DT02-starter.R`, and so on). When a module tells you to open its starter, select it under `starters` in the file list. Every line is already written, with a comment above it.
+- `.github/copilot-instructions.md`, Copilot's instructions for this course; leave it in place.
 
 The two monthly data files are already here. Any other data file a module hands you comes from Blackboard: download it to your computer, then upload it into the codespace as **Setup on a Chromebook**, step B4, shows.
 
@@ -68,7 +71,7 @@ A codespace is a workspace, not storage. Keep copies of your work on your own co
 ## If something goes wrong
 
 - **GitHub says you have used your monthly allowance.** Go to [https://github.com/codespaces](https://github.com/codespaces), delete any codespace you are not using from the **...** menu next to it, and email your instructor. Do not add a payment method.
-- **Your codespace is gone.** It was deleted after 30 days without use. Start a new one with the steps above. R, tidyverse and effectsize come with it again.
+- **Your codespace is gone.** It was deleted after 30 days without use. Start a new one with the steps above. R, tidyverse, effectsize, and the AURA Lab R Companion come with it again.
 - **Anything else.** Stop after 15 minutes on one step. Take a screenshot, write down the step, and email your instructor.
 
 ## About this template (for instructors)
