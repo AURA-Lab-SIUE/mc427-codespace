@@ -37,6 +37,9 @@ df %>% count(share_button)
 # then a Cohen's d line from effectsize. Run the test twice, on like_count and on a log1p(like_count)
 # column (see the instructions), and keep both outputs.
 
+# Optional check: put the cursor on the line below this comment before you run the R Companion's
+# Test group (Write R code), so its code lands here, and label it as a check.
+
 
 # Plain-language interpretation. YOUR TURN: 2 to 3 sentences for the Community Manager at
 # Hello Games. No statistical notation.
@@ -58,6 +61,9 @@ xtabs(~ update + posted_from, data = df) %>% chisq.test() %>% pluck("expected") 
 # it. Expected output shape: the chi-square test (X-squared, df, p-value) or its tidied one-row
 # tibble, and a Cramer's V line from effectsize. Any warning R prints belongs in your log.
 
+# Optional check: put the cursor on the line below this comment before you run the R Companion's
+# Test group (Write R code), so its code lands here, and label it as a check.
+
 
 # Plain-language interpretation. YOUR TURN: 2 to 3 sentences. No statistical notation.
 #
@@ -71,6 +77,9 @@ xtabs(~ update + posted_from, data = df) %>% chisq.test() %>% pluck("expected") 
 # Copilot's code and output. YOUR TURN: paste Copilot's regression code below, read it, then run
 # it. Expected output shape: a tidied coefficient table (one row per term, with estimate,
 # p.value, conf.low and conf.high) and a glance() row with r.squared and nobs.
+
+# Optional check: put the cursor on the line below this comment before you run the R Companion's
+# Test group (Write R code), so its code lands here, and label it as a check.
 
 
 # Plain-language interpretation. YOUR TURN: 2 to 3 sentences. No statistical notation.

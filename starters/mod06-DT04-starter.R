@@ -38,6 +38,9 @@ ggplot(funnel, aes(x = month, y = players)) + geom_col()
 # Save the most recent chart to a picture file in your MC427 folder. Prints "Saving 7 x 7 in image".
 ggsave("frontiers-funnel.png")
 
+# Before this chart goes in your deck, give it a title and alt text: the R Companion's Bar chart
+# (Write R code, Describe group) writes labs() with both.
+
 # YOUR TURN (Read it like an analyst): change the three months to July, August and September 2019
 # and the kept rate for Beyond prints 43.8. Add your lines below this comment.
 

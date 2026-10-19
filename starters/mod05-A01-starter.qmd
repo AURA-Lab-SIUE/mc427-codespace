@@ -43,6 +43,8 @@ YOUR TURN: one sentence naming the test and why it fits this question. Write it 
 ```{r}
 #| label: analysis-1
 # YOUR TURN: paste Copilot's code here, read it, then run it line by line.
+# Optional check: put the cursor on the line below this comment before you run the R Companion's
+# Test group (Write R code), so its code lands here, and label it as a check.
 # Ask for tidyverse code (dplyr, the %>% pipe, broom::tidy) in your prompt.
 # Expected: a one-row tibble whose first columns are estimate, estimate1 (the mean of the `no`
 # group), estimate2 (`yes`), statistic (the t value), p.value and parameter (Welch's df, not n),
@@ -79,6 +81,8 @@ xtabs(~ update + posted_from, data = df) %>% chisq.test() %>% pluck("expected") 
 ```{r}
 #| label: analysis-2
 # YOUR TURN: paste Copilot's chi-square code here, read it, then run it.
+# Optional check: put the cursor on the line below this comment before you run the R Companion's
+# Test group (Write R code), so its code lands here, and label it as a check.
 # Expected output shape: the chi-square test (X-squared, df, p-value) or its tidied one-row
 # tibble, and a Cramer's V line from effectsize. Any warning R prints belongs in your log.
 ```
@@ -100,6 +104,8 @@ YOUR TURN: one sentence.
 ```{r}
 #| label: analysis-3
 # YOUR TURN: paste Copilot's regression code here, read it, then run it.
+# Optional check: put the cursor on the line below this comment before you run the R Companion's
+# Test group (Write R code), so its code lands here, and label it as a check.
 # Expected output shape: a tidied coefficient table (one row per term, with estimate,
 # p.value, conf.low and conf.high) and a glance() row with r.squared and nobs.
 ```
