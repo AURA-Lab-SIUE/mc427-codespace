@@ -48,7 +48,7 @@ Four kinds of course file live in this page's file list, so you never have to at
 
 - `mc427-setup-check.R`, the setup test. In the R terminal, type `source("mc427-setup-check.R")` and press **Enter**; the course guide **Check Your Setup** says what the result means.
 - `nms-steam-monthly-players-2016-2026.csv` and `nms-x-monthly-2016-2021.csv`, the two monthly-count data files that the Module 2, 3, 6, 7, and 8 Data Tasks load. The first is the public monthly average and peak Steam player counts for No Man's Sky, copied from SteamCharts; the second is monthly counts and percentages from the course's archive of public #NoMansSky posts on X, with no post text and no account names. The other data files each module hands you still come from Blackboard.
-- `starters/`, one starter script per Data Task and analysis (`mod02-week2-starter.R`, `mod03-DT02-starter.R`, and so on). When a module tells you to open its starter, select it under `starters` in the file list. Every line is already written, with a comment above it.
+- `starters/`, one starter script per Data Task and analysis (`mod02-week2-starter.R`, `mod03-DT02-starter.R`, and so on). When a module tells you to open its starter, select it under `starters` in the file list. Every line is already written, with a comment above it. The Mini-Analysis uses `mod05-A01-starter.R`; `mod05-A01-starter.qmd` is the same starter as a Quarto document, for anyone who prefers one, and nothing requires it.
 - `.github/copilot-instructions.md`, Copilot's instructions for this course; leave it in place.
 
 The two monthly data files are already here. Any other data file a module hands you comes from Blackboard: download it to your computer, then upload it into the codespace as **Setup on a Chromebook**, step B4, shows.
