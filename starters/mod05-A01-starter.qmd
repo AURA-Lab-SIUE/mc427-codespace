@@ -6,12 +6,12 @@ date: today
 format: html
 ---
 
-<!-- How to use this file: it is your Mini-Analysis submission, with the headings in place.
-     Work in VS Code with your MC427 folder open and the R terminal started. (In a codespace: upload
-     the CSV to the top of the file list, not into the starters folder.)
+<!-- How to use this file: it is your Mini-Analysis submission, with the headings and every line
+     of code in place. Work in VS Code with your MC427 folder open and the R terminal started.
+     (In a codespace: upload the CSV to the top of the file list, not into the starters folder.)
      Run a code chunk by putting the cursor inside it and pressing Ctrl+Enter line by line
-     (Command+Return on a Mac). Every place marked YOUR TURN is where your own work goes.
-     When you are done, copy the text, your code and R's output into your submission document:
+     (Command+Return on a Mac). Every place marked YOUR TURN is where your own sentences go.
+     When you are done, copy the text, the code and R's output into your submission document:
      in the R terminal, drag across the lines to select them, then press Ctrl+C (Command+C on a
      Mac). If you have the Quarto extension, you may render the file instead. -->
 
@@ -30,106 +30,55 @@ nrow(df)
 df %>% count(share_button)
 ```
 
-# Analysis 1: T-test
+# The question
 
 **Research question:** Do posts sent with a console's share button (PlayStation or Xbox) receive more likes than posts written in other apps?
 
-## Test selection
+## Step 1: Test selection
 
-YOUR TURN: one sentence naming the test and why it fits this question. Write it before you prompt Copilot.
+YOUR TURN: one sentence naming the test and why it fits this question. Write it before you run the test.
 
-## Copilot's code and output
+## Step 2: Look at the likes before you test
 
 ```{r}
-#| label: analysis-1
-# YOUR TURN: paste Copilot's code here, read it, then run it line by line.
-# Optional check: put the cursor on the line below this comment before you run the R Companion's
-# Test group (Write R code), so its code lands here, and label it as a check.
-# Ask for tidyverse code (dplyr, the %>% pipe, broom::tidy) in your prompt.
-# Expected: a one-row tibble whose first columns are estimate, estimate1 (the mean of the `no`
-# group), estimate2 (`yes`), statistic (the t value), p.value and parameter (Welch's df, not n),
-# then a Cohen's d line from effectsize.
-# Run the test twice, on like_count and on a log1p(like_count) column (see the instructions),
-# and keep both outputs here.
+#| label: look
+# Expected: a 2-row tibble. no: 577 posts, median 1, mean 7.81, max 330.
+# yes: 173 posts, median 1, mean 5.55, max 89.
+df %>%
+  group_by(share_button) %>%
+  summarize(posts = n(), median_likes = median(like_count),
+            mean_likes = round(mean(like_count), 2), max_likes = max(like_count))
+
+# A few posts have many likes, so add a second version of the likes column that shrinks big
+# numbers: log1p() is the log of one plus the count, which works when the count is zero.
+df <- df %>% mutate(log_likes = log1p(like_count))
 ```
 
-## Plain-language interpretation
+## Step 3: Run the t-test, both ways
+
+```{r}
+#| label: t-test
+# Version 1, on like_count. Expected: estimate1 7.81 (no), estimate2 5.55 (yes), statistic 1.56,
+# p.value 0.118, parameter 530. Then Cohen's d 0.10, 95% CI [-0.07, 0.27].
+t.test(like_count ~ share_button, data = df) %>% broom::tidy()
+effectsize::cohens_d(like_count ~ share_button, data = df)
+
+# Version 2, on log_likes. Expected: estimate1 1.15, estimate2 1.02, statistic 1.30,
+# p.value 0.195, parameter 297. Then Cohen's d 0.11, 95% CI [-0.06, 0.28].
+t.test(log_likes ~ share_button, data = df) %>% broom::tidy()
+effectsize::cohens_d(log_likes ~ share_button, data = df)
+```
+
+## Step 4: Verification log
+
+One entry with four elements: (1) what the code produced, (2) what you checked and how, (3) what the check showed, with the numbers, (4) your decision (accept, modify, or reject) and why.
+
+YOUR TURN.
+
+## Step 5: Plain-language interpretation
 
 YOUR TURN: 2 to 3 sentences for the Community Manager at Hello Games. No statistical notation.
 
-# Analysis 2: Chi-square
-
-**Research question:** Did the mix of apps people posted from differ across the three updates?
-
-## Test selection
-
-YOUR TURN: one sentence.
-
-## The required check (your own code, not Copilot's)
-
-```{r}
-#| label: analysis-2-check
-# These lines are given in the instructions. Run them and keep the two tables.
-# Expected: a 3 x 4 tibble of observed counts, then a 3 x 3 table of expected counts
-# (192.33, 49.33 and 8.33 in every row).
-df %>% count(update, posted_from) %>% pivot_wider(names_from = posted_from, values_from = n)
-xtabs(~ update + posted_from, data = df) %>% chisq.test() %>% pluck("expected") %>% round(2)
-```
-
-## Copilot's code and output
-
-```{r}
-#| label: analysis-2
-# YOUR TURN: paste Copilot's chi-square code here, read it, then run it.
-# Optional check: put the cursor on the line below this comment before you run the R Companion's
-# Test group (Write R code), so its code lands here, and label it as a check.
-# Expected output shape: the chi-square test (X-squared, df, p-value) or its tidied one-row
-# tibble, and a Cramer's V line from effectsize. Any warning R prints belongs in your log.
-```
-
-## Plain-language interpretation
-
-YOUR TURN: 2 to 3 sentences. No statistical notation.
-
-# Analysis 3: Regression
-
-**Research question:** Does post length (in words) predict engagement (likes)?
-
-## Test selection
-
-YOUR TURN: one sentence.
-
-## Copilot's code and output
-
-```{r}
-#| label: analysis-3
-# YOUR TURN: paste Copilot's regression code here, read it, then run it.
-# Optional check: put the cursor on the line below this comment before you run the R Companion's
-# Test group (Write R code), so its code lands here, and label it as a check.
-# Expected output shape: a tidied coefficient table (one row per term, with estimate,
-# p.value, conf.low and conf.high) and a glance() row with r.squared and nobs.
-```
-
-## Plain-language interpretation
-
-YOUR TURN: 2 to 3 sentences. No statistical notation.
-
-# Verification log
-
-One entry per analysis. Each entry has four elements: (1) what Copilot produced, (2) what you checked and how, (3) what the check showed, with the evidence, (4) your decision and its effect on the output.
-
-## Analysis 1
-
-YOUR TURN.
-
-## Analysis 2
-
-YOUR TURN.
-
-## Analysis 3
-
-YOUR TURN.
-
 # AI Use Log
 
-YOUR TURN: confirm that your Week 5 entry is in your AI Use Log, and name the prompt strategy and at least one oversight decision it documents.
+YOUR TURN: confirm that your Week 5 entry is in your AI Use Log, and name the prompt strategy and at least one oversight decision it documents (from your Copilot work on the memo).
