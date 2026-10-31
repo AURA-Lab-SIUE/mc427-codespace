@@ -6,12 +6,12 @@
 # codes filled in) and mod04-E01-next-50-reviews.csv are both in your MC427 folder.
 # (In a codespace: upload them to the top of the file list, not into the starters folder.)
 # Your numbers are your own, because they come from your own coding. The numbers in
-# the "Expect" comments come from a worksheet filled with codes drawn at random.
+# the "Expect" comments come from a coding sheet filled with codes drawn at random.
 
 # ---- 1. Load the tidyverse ----
 library(tidyverse)
 
-# ---- 2. Load your coded worksheet and name it "codes" ----
+# ---- 2. Load your coding sheet and name it "codes" ----
 # Expect: a report of 50 rows and 8 columns
 codes <- read_csv("mod04-E01-coding-worksheet.csv")
 
